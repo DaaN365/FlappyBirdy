@@ -12,9 +12,12 @@ public class GamePanel extends JPanel implements ActionListener {
     Bird ptak;
     Timer heroSmycka;
 
+    Image background;
+
     public GamePanel() {
         this.setPreferredSize(new Dimension(boardWidth, boardHeight));
-        this.setBackground(Color.GREEN);
+
+        background = new ImageIcon(getClass().getResource("/background.png")).getImage();
 
         int startX = boardWidth / 8;
         int startY = boardHeight / 2;
@@ -35,6 +38,7 @@ public class GamePanel extends JPanel implements ActionListener {
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
+        g.drawImage(background, 0, 0, boardWidth, boardHeight, null);
         ptak.draw(g);
     }
 

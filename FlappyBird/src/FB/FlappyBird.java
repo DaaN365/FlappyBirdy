@@ -13,7 +13,5 @@ public class FlappyBird {
         frame.setLocationRelativeTo(null); // Vycentruje okno na monitoru
         frame.setResizable(false);
         frame.setVisible(true);
-
-
     }
 }
