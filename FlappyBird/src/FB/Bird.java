@@ -23,7 +23,7 @@ public class Bird {
     }
 
     public void skoc(){
-        rychlostY = -20;
+        rychlostY = -15;
     }
 
     public void posunSe(){
